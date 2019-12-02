@@ -22,7 +22,7 @@
 		</nav>
 	</header>
 	<main>
-		<h1>Студия дизайна Нердс</h1>
+		<h1 class="visually-hidden">Студия дизайна Нердс</h1>
 		<section class="development">	
 			<section class="web">
 				<img src="img/web-logo.png" alt="Логотип Веб-сайты">
@@ -57,5 +57,17 @@
 			<p>Скидка 10% для друзей из социальных сетей.</p>
 		</div>
 	</footer>
+	<div class="pop-up">
+		<h1>Напишите нам</h1>
+		<form action="" method="post">
+			<label for="name-field">Ваше имя:</label>
+			<input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+			<label for="mail-field">Ваш e-mail:</label>
+			<input type="text" name="mail" id="mail-field" placeholder="email@mail.com">
+			<label for="message-field">Текст письма:</label>
+			<input type="textarea" name="message" id="message-field" placeholder="В свободной форме">
+			<button type="submit" class="send">Отправить</button>
+		</form>
+	</div>
 </body>
 </html>
