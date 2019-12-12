@@ -1,0 +1,108 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic');
+</style>
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+ 	line-height: 24px;
+ 	background-color: #ffffff;
+ 	color: #000000;
+ 	font-weight: 700;
+ }
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+}
+
+.main-nav {
+  font-size: 16px;
+  line-height: 30px;		
+}
+
+header {
+	background-color: #eeeeee;
+}
+
+.list-nav,
+.basket {
+	list-style: none;
+}
+
+.logo:hover {
+	opacity: 0.8;
+}
+
+.logo:active {
+	opacity: 0.3;
+}
+
+.list-nav a,
+.basket a {
+	color: #000000;
+}
+
+.list-nav a:hover,
+.basket a:hover,
+.list-nav a:focus,
+.basket a:focus {
+	color: #fb565a;
+} 
+
+.list-nav a:active {
+	color: #bdbdbd;
+}
+
+.basket a:active {
+	color: #bdbdbd;
+}
+
+.active a {
+	border-bottom: 2px solid red;
+}
+
+h2 {
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.order {
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 18px;
+	padding: 20px 40px;
+}
+
+.red {
+	background-color: #fb565a;
+}
+
+.green {
+	background-color: #00ca74;
+}
+
+.yellow {
+	background-color: #efc84a;
+}
+
+.red:hover {
+	background-color: #e74246;
+}
+
+.green:hover {
+	background-color: #00bc6c;
+}
+
+.yellow:hover{
+	background-color: #eab534;
+}
+
