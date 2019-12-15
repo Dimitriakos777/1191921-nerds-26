@@ -13,6 +13,17 @@ body {
  	font-weight: 700;
  }
 
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
 a {
   text-decoration: none;
   text-transform: uppercase;
@@ -104,5 +115,85 @@ p {
 
 .yellow:hover{
 	background-color: #eab534;
+}
+
+.red:active {
+	background-color: #d7373b;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.green:active {
+	background-color: #00aa62;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.yellow:active {
+	background-color: #e5a722;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.big-text {
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: bold;
+}
+
+.normal-text {
+	font-size: 16px;
+	line-height: 22px;
+}
+
+/* Catalog */
+
+.page-title {
+	font-size: 55px;
+	line-height: 55px;
+}
+
+fieldset {
+	border: none;
+}
+
+legend {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+.grid-list,
+.feautures-list {
+	list-style: none;
+	line-height: 20px;
+}
+
+.show {
+	height: 50px;
+	width: 260px;
+	border: none;
+	line-height: 18px;
+	color: #000000;
+	background-color: #eeeeee;
+	font-weight: bold;
+}
+
+.show:hover {
+	background-color: #dfdfdf;
+}
+
+.show:active {
+	background-color: #dfdfdf;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-list {
+	list-style: none;
+}
+
+.catalog-item {
+	width: 360px;
+}
+
+.catalog-item:hover {
+	box-shadow: 0 2px 5px; 
 }
 
