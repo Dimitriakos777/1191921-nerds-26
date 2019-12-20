@@ -1,48 +1,40 @@
-<style>
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic');
-</style>
-
 body {
-	margin: 0;
-	padding: 0;
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
  	line-height: 24px;
- 	background-color: #ffffff;
  	color: #000000;
- 	font-weight: 700;
+ 	font-weight: 500;
  }
 
 .visually-hidden {
-	position: absolute !important;
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	position: absolute;
 	clip: rect(1px, 1px, 1px, 1px);
-	padding:0 !important;
-	border:0 !important;
-	height: 1px !important; 
-	width: 1px !important; 
+	padding:0;
+	border:0;
+	height: 1px; 
+	width: 1px; 
 	overflow: hidden;
 }
 
 a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #000000;
-  font-weight: bold;
 }
 
-.main-nav {
+.navigation {
   font-size: 16px;
-  line-height: 30px;		
+  line-height: 30px;	
+  
 }
 
-header {
-	background-color: #eeeeee;
+.page-header {
+ background-color: #eeeeee;
 }
 
-.list-nav,
+.navigation-list,
 .basket {
 	list-style: none;
+	
 }
 
 .logo:hover {
@@ -53,19 +45,19 @@ header {
 	opacity: 0.3;
 }
 
-.list-nav a,
+.navigation-list a,
 .basket a {
 	color: #000000;
 }
 
-.list-nav a:hover,
+.navigation-list a:hover,
 .basket a:hover,
-.list-nav a:focus,
+.navigation-list a:focus,
 .basket a:focus {
 	color: #fb565a;
 } 
 
-.list-nav a:active {
+.navigation-list a:active {
 	color: #bdbdbd;
 }
 
@@ -75,15 +67,6 @@ header {
 
 .active a {
 	border-bottom: 2px solid red;
-}
-
-h2 {
-	text-transform: uppercase;
-}
-
-p {
-	font-size: 16px;
-	line-height: 24px;
 }
 
 .order {
@@ -135,7 +118,7 @@ p {
 .big-text {
 	font-size: 36px;
 	line-height: 36px;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .normal-text {
@@ -150,14 +133,15 @@ p {
 	line-height: 55px;
 }
 
-fieldset {
+.filter-group,
+.filter-options {
 	border: none;
 }
 
-legend {
+.group-name {
 	font-size: 18px;
 	line-height: 30px;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .grid-list,
@@ -173,7 +157,7 @@ legend {
 	line-height: 18px;
 	color: #000000;
 	background-color: #eeeeee;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .show:hover {

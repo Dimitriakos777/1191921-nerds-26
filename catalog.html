@@ -3,30 +3,33 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
-  <header class="header-inner">
-    <nav class="main-nav">
-      <a href="index.html">
-        <img src="img/nerds-logo.svg" alt="Логотип Нёрдс" class="logo">
-      </a>
-      <ul class="list-nav">
-        <li class="list-item"><a  href="#">Студия</a></li>
-        <li class="list-item"><a  href="#">Клиенты</a></li>
-        <li class="list-item active"><a  href="">Магазин</a></li>
-        <li class="list-item"><a  href="#">Контакты</a></li>
-      </ul>   
+<body class="page">
+  <header class="page-header">
+    <nav class="navigation">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/nerds-logo.svg" alt="Логотип Нёрдс" class="logo">
+        </a>
+      </div>
+      <ul class="navigation-list">
+        <li class="navigation-item"><a href="#">Студия</a></li>
+        <li class="navigation-item"><a href="#">Клиенты</a></li>
+        <li class="navigation-item active"><a href="#">Магазин</a></li>
+        <li class="navigation-item"><a href="#">Контакты</a></li>
+      </ul>      
       <div class="basket">
-        <img src="img/cart-icon.svg" alt="Логотип Корзина"><a href="#">Корзина</a>
+        <a href="#">Корзина</a>
       </div>
     </nav>
   </header>
   <main>
     <h1 class="page-title">Магазин готовых шаблонов</h1>
-    <section>
-      <form action="" method="get" class="items-filter">
+    <section class="templates-filtr">
+      <form action="" method="get" class="form-filter">
         <fieldset class="filter-group">
           <legend class="group-name">Сетка:</legend>
           <ul class="grid-list">
@@ -44,7 +47,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="items-filter">
+        <fieldset class="filter-options">
           <legend class="group-name">Особенности</legend>
           <ul class="feautures-list">
             <li class="feautures-item">
@@ -77,74 +80,74 @@
         <li class="catalog-item">
           <img src="img/sedona.jpg" alt="sedona-image">
           <div class="info visually-hidden">
-            <h3>Sedona</h3>
+            <a href=""><h3>Sedona</h3></a>
             <p>Информационный сайт для туристов</p>
-            <a href="">9 900 руб.</a>
+            <a href="" class="price-btn">9 900 руб.</a>
           </div>
         </li>
         <li class="catalog-item">
           <img src="img/pink.jpg" alt="pink-image">
           <div class="info visually-hidden">
-            <h3>Pink App</h3>
+            <a href=""><h3>Pink App</h3></a>
             <p>Продуктовый лендинг приложения для iOS и Android</p>
-            <a href="">9 900 руб.</a>
+            <a href="" class="price-btn">9 900 руб.</a>
           </div>
         </li>
         <li class="catalog-item">
           <img src="img/borodinski.jpg" alt="borodinski-image">
           <div class="info visually-hidden">
-            <h3>Barbershop</h3>
+            <a href=""><h3>Barbershop</h3></a>
             <p>Сайт салона красоты. Для мужчин, да.</p>
-            <a href="">9 900 руб.</a>
+            <a href="" class="price-btn">9 900 руб.</a>
           </div>
         </li>
         <li class="catalog-item">
           <img src="img/mishka.jpg" alt="mishka-image">
           <div class="info visually-hidden">
-            <h3>Mishka</h3>
+            <a href=""><h3>Mishka</h3></a>
             <p>Интернет-магазин вязаных игрушек</p>
-            <a href="">9 900 руб.</a>
+            <a href="" class="price-btn">9 900 руб.</a>
           </div>
         </li>
         <li class="catalog-item">
           <img src="img/aplus.jpg" alt="aplus-image">
           <div class="info visually-hidden">
-            <h3>A Plus</h3>
+            <a href=""><h3>A Plus</h3></a>
             <p>Лендинг курсов повышения квалификации</p>
-            <a href="">9 900 руб.</a>
+            <a href="" class="price-btn">9 900 руб.</a>
           </div>
         </li>
         <li class="catalog-item">
           <img src="img/kvast.jpg" alt="kvast-image">
           <div class="info visually-hidden">
-            <h3>Кваст</h3>
+            <a href=""><h3>Кваст</h3></a>
             <p>Промо-сайт производителя крафтового кваса</p>
-            <a href="">9 900 руб.</a>
+            <a href="" class="price-btn">9 900 руб.</a>
           </div>
         </li>
       </ul>
     </section>
   </main>
-  <footer>
+  <footer class="page-footer">
     <div class="social">
-      <ul class="social-links">
+      <ul class="social-list">
        <li><a href="#">Вконтакте</a></li>
        <li><a href="#">Фейсбук</a></li>
        <li><a href="#">Инстаграм</a></li>
      </ul>
    </div>
    <div class="friendship">
-    <b>Давайте дружить, это выгодно!</b>
-    <p>Скидка 10% для друзей из социальных сетей.</p>
+    <p class="big-text">Давайте дружить, это выгодно!</p>
+    <p class="normal-text">Скидка 10% для друзей из социальных сетей.</p>
   </div>
 </footer>
 <div class="pop-up">
-    <h1>Напишите нам</h1>
+    <p>Напишите нам</p>
     <form action="" method="post">
       <label for="name-field">Ваше имя:</label>
       <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
       <label for="mail-field">Ваш e-mail:</label>
-      <input type="text" name="mail" id="mail-field" placeholder="email@mail.com">
+      <input type="email" name="mail" id="mail-field" placeholder="email@mail.com">
       <label for="message-field">Текст письма:</label>
       <input type="textarea" name="message" id="message-field" placeholder="В свободной форме">
       <button type="submit" class="send">Отправить</button>
