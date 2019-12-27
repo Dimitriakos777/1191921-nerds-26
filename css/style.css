@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
@@ -16,6 +23,11 @@ body {
 	overflow: hidden;
 }
 
+.container {
+	width: 1160px;
+	margin: 0 auto;
+}
+
 a {
   text-decoration: none;
   text-transform: uppercase;
@@ -24,7 +36,21 @@ a {
 .navigation {
   font-size: 16px;
   line-height: 30px;	
-  
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+  margin-left: 210px;
+}
+
+.navigation-item {
+	margin-left: 50px;
+}
+
+.basket {
+  margin-left: auto;	
 }
 
 .page-header {
@@ -67,6 +93,13 @@ a {
 
 .active a {
 	border-bottom: 2px solid red;
+}
+
+.development {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 80px;
+  	border-bottom: 2px solid #eee;
 }
 
 .order {
@@ -115,6 +148,21 @@ a {
 	color: rgba(255, 255, 255, 0.3);
 }
 
+.social-block {
+	display: flex;
+	align-items: center;
+}
+
+.social-list {
+	display: flex;
+	list-style: none;
+
+}
+
+.friendship {
+	margin-left: 140px;
+}
+
 .big-text {
 	font-size: 36px;
 	line-height: 36px;
@@ -131,6 +179,17 @@ a {
 .page-title {
 	font-size: 55px;
 	line-height: 55px;
+	text-align: center;
+}
+
+.catalog-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.wrap-catalog {
+	display: flex;
+	
 }
 
 .filter-group,
@@ -173,9 +232,6 @@ a {
 	list-style: none;
 }
 
-.catalog-item {
-	width: 360px;
-}
 
 .catalog-item:hover {
 	box-shadow: 0 2px 5px; 
