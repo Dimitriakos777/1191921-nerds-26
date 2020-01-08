@@ -192,9 +192,10 @@ a {
 	
 }
 
-.filter-group,
-.filter-options {
+.filter-group {
 	border: none;
+	width: 260px;
+  	padding: 0;
 }
 
 .group-name {
@@ -228,10 +229,22 @@ a {
 	color: rgba(0, 0, 0, 0.3);
 }
 
+.catalog {
+	width: 760px;
+}
+
 .catalog-list {
 	list-style: none;
 }
 
+.catalog-item {
+	width: 360px;
+	margin-right: 40px;
+}
+
+.catalog-item:nth-child(2n) {
+	margin: 0;
+}
 
 .catalog-item:hover {
 	box-shadow: 0 2px 5px; 
