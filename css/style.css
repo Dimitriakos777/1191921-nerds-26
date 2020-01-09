@@ -24,8 +24,9 @@ body {
 }
 
 .container {
-	width: 1160px;
+	width: 1200px;
 	margin: 0 auto;
+	padding: 0 20px;
 }
 
 a {
@@ -63,11 +64,11 @@ a {
 	
 }
 
-.logo:hover {
+.inner-logo:hover {
 	opacity: 0.8;
 }
 
-.logo:active {
+.inner-logo:active {
 	opacity: 0.3;
 }
 
@@ -100,6 +101,15 @@ a {
 	justify-content: space-between;
 	padding-bottom: 80px;
   	border-bottom: 2px solid #eee;
+}
+
+.development-item {
+  width: 300px;
+  margin-right: 100px;
+}
+
+.presentation {
+  margin-right: 0;
 }
 
 .order {
@@ -235,6 +245,7 @@ a {
 
 .catalog-list {
 	list-style: none;
+	padding-left: 0;
 }
 
 .catalog-item {
