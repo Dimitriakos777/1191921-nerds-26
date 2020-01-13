@@ -355,6 +355,15 @@ padding-left: 40px;
   	margin-right: 12px;
   }
 
+.social-button:hover {
+   background-color: #e74246;	
+}
+
+.social-button:active {
+   background-color: #d7373b;
+   fill-opacity: 0.3;
+}
+
 .friendship {
 	margin-left: 140px;
 }
