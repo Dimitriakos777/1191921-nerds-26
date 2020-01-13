@@ -340,9 +340,21 @@ padding-left: 40px;
 
 .social-list {
 	display: flex;
+	flex-wrap: wrap;
+  	justify-content: space-between;
 	list-style: none;
-
+	
 }
+
+.social-button {
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+	width: 78px;
+  	height: 78px;
+  	background-color: #e1e1e1;
+  	border-radius: 50%;
+  }
 
 .friendship {
 	margin-left: 140px;
